@@ -11,11 +11,11 @@ The investigations demonstrate the workflow from alert generation and triage thr
 
 ## 2. Investigation Index
 
-| Case | Sentinel Incident ID | Detection | Investigation Focus | Current Status |
-|---|---:|---|---|---|
-| CASE-14 | 136680 | DET-01 — Multiple Failed Logons | Repeated failed authentication attempts | Resolved |
-| CASE-28 | 136694 | DET-02 — Suspicious PowerShell Activity | PowerShell Base64 decoding activity | New |
-| CASE-29 | 136695 | DET-03 — Suspicious Local Group Enumeration | Privileged local group enumeration | Closed |
+| Case | Detection | Investigation Focus | Current Status |
+|---|---|---|---|
+| CASE-14 | DET-01 — Multiple Failed Logons | Repeated failed authentication attempts | Resolved |
+| CASE-28 | DET-02 — Suspicious PowerShell Activity | PowerShell Base64 decoding activity | Closed |
+| CASE-29 | DET-03 — Suspicious Local Group Enumeration | Privileged local group enumeration | Closed |
 
 ## 3. Investigation Reports
 
@@ -57,9 +57,9 @@ The investigations follow a structured workflow:
 - Decoded value: `Hello`
 - Classification: Informational, expected activity
 - Determination: Security testing
-- Status: New
+- Status: Closed
 
-The Defender case remains New. The alert details page confirms Classification = Informational, expected activity, and the alert activity history records Determination = Security testing. These are alert-level values; distinguish them from case-level summary fields.
+The Defender case was verified Closed on 2026-11-26. The alert details page confirms Classification = Informational, expected activity, and the alert activity history records Determination = Security testing. These are alert-level values; distinguish them from case-level summary fields.
 
 ### CASE-29 — Suspicious Local Group Enumeration
 
