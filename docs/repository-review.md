@@ -21,7 +21,7 @@ The recorded implementation and controlled tests are documented. KQL-08 now incl
 - Updated the KQL index and validation matrix to reflect the KQL-08 investigation.
 - Rechecked live Azure Monitor Agent status (1.45.0.0, Provisioning succeeded, Handler Ready), DCR Windows Event Logs source and XPath filters, PowerShell Event ID 4104 collection, Log Analytics destination and VM DCR association count.
 - Rechecked all three Sentinel analytics rules: each was Enabled and its live KQL, five-minute frequency/window, threshold, event grouping and incident creation settings matched the documented configuration.
-- Re-ran live ingestion checks: recent SecurityEvent activity, 21 Event ID 4104 records in the prior 24 hours, and a fresh controlled Event ID 4625 successfully ingested (record 49523).
+- Re-ran live ingestion checks: recent SecurityEvent activity, 21 Event ID 4104 records in the prior 24 hours, and a fresh controlled Event ID 4625 successfully ingested.
 - Confirmed all three controlled lab cases are Closed in the Defender Cases list.
 
 ## Security Review Findings
