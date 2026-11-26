@@ -6,7 +6,7 @@
 | Property | Value |
 |---|---|
 | Case reference | 29 |
-| Sentinel incident ID | 136695 |
+| Sentinel incident ID | Omitted from public record |
 | Detection | DET-03 — Suspicious Local Group Enumeration |
 | Alert ID | `sn109d0d21-63f7-44fe-8685-0ce52f32ad01` |
 | Severity | Medium |
