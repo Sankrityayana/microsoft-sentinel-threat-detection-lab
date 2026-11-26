@@ -92,7 +92,7 @@ The analytics rule generated a Sentinel incident.
 
 | Property | Value |
 |---|---|
-| Incident ID | 136680 |
+| Incident ID | Omitted from public record |
 | Case reference | 14 |
 | Classification | Informational, expected activity |
 | Determination | Security testing |
