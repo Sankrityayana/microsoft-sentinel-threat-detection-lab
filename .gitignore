@@ -1,0 +1,34 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.cer
+*.crt
+
+# Azure credentials and CLI state
+.azure/
+.azureProfile
+AzureRmContext.json
+
+# Local/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Python cache (for future validation scripts)
+__pycache__/
+*.py[cod]
+.pytest_cache/
