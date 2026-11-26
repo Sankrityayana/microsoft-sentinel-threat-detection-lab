@@ -107,7 +107,7 @@ Observed event details:
 |---|---|
 | Incident ID | Omitted from public record |
 | Case reference | 28 |
-| Alert ID | `sn1159c4d1-866d-43d4-b760-a24c0f8d7aa2` |
+| Alert ID | Omitted from public record |
 | Severity | Medium |
 | Analyst assessment | Expected security testing activity |
 | Alert details: Classification | Informational, expected activity |
