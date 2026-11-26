@@ -129,15 +129,15 @@ All three detections generated alerts and associated Sentinel incidents during c
 
 ### 4. Incident Investigation
 
-Three Sentinel alerts were generated and investigated in the Defender Cases experience; each case is linked to a Sentinel incident ID.
+Three Sentinel alerts were generated and investigated in the Defender Cases experience. Case labels are used here instead of cloud incident identifiers.
 
-| Case | Detection | Incident ID | Current Status |
-|---|---|---:|---|
-| CASE-14 | Multiple Failed Logons | 136680 | Resolved |
-| CASE-28 | Suspicious PowerShell Activity | 136694 | New |
-| CASE-29 | Suspicious Local Group Enumeration | 136695 | Closed |
+| Case | Detection | Current Status |
+|---|---|---|
+| CASE-14 | Multiple Failed Logons | Resolved |
+| CASE-28 | Suspicious PowerShell Activity | Closed |
+| CASE-29 | Suspicious Local Group Enumeration | Closed |
 
-For all three alerts, controlled test activity was classified as Informational, expected activity, with Security testing recorded as the determination. CASE-14's alert is Resolved, CASE-28's case remains New, and CASE-29's case is Closed. Alert status and case status are distinct workflow fields.
+For all three alerts, controlled test activity was classified as Informational, expected activity, with Security testing recorded as the determination. CASE-14's alert is Resolved; CASE-28 and CASE-29 are Closed. Alert status and case status are distinct workflow fields.
 
 The incidents demonstrate that detection alerts require investigation and contextual analysis rather than automatic assumptions of compromise.
 
