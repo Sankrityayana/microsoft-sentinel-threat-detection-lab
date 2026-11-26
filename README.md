@@ -212,7 +212,7 @@ This is a learning and demonstration environment, not a production enterprise SO
 
 ## Evidence and Screenshots
 
-**Evidence status:** The screenshot inventory contains 25 planned items; none had been committed to the repository at the time of this review. Actual screenshots must be captured from the Azure and Sentinel environment before the evidence section can be considered complete.
+**Evidence status:** The evidence inventory lists 21 remaining planned screenshots; none have been committed to the repository. Actual screenshots must be captured from the Azure and Sentinel environment before the evidence section can be considered complete. Actual screenshots must be captured from the Azure and Sentinel environment before the evidence section can be considered complete.
 
 [View the evidence index](evidence/README.md).
 
