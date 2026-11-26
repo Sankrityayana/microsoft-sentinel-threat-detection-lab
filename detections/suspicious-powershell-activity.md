@@ -105,7 +105,7 @@ Observed event details:
 
 | Property | Value |
 |---|---|
-| Incident ID | 136694 |
+| Incident ID | Omitted from public record |
 | Case reference | 28 |
 | Alert ID | `sn1159c4d1-866d-43d4-b760-a24c0f8d7aa2` |
 | Severity | Medium |
