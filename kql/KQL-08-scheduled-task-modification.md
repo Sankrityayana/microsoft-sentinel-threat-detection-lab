@@ -76,12 +76,12 @@ Observed task definition:
 
 - Task path: `\Microsoft\Windows\SoftwareProtectionPlatform\SvcRestartTask`
 - Source and author fields reference `sppc.dll`.
-- Subject SID / task principal: `S-1-5-20` (Network Service).
-- Task action: COM handler, class ID `{B1AEBB5D-EAD9-4476-B375-9C3ED9F32AFC}`, data `timer`.
+- Task principal: Network Service.
+- Task action: COM handler with a timer-related data value; class identifier omitted.
 - Daily calendar trigger; task is marked hidden.
-- Two inspected records had client PIDs 472 and 4104 and parent PID 684.
+- Two inspected records contained client and parent process identifiers; numeric values are omitted.
 
-Process investigation found Event ID 4688 records where PID 684 (hex `0x2ac`) was associated with `C:\Windows\System32\sppsvc.exe`, parented by `C:\Windows\System32\services.exe`. However, a client-PID join restricted to the two minutes before task updates returned no matches. The PID-only results cannot establish a direct causal relationship because Windows reuses PIDs.
+Process investigation found Event ID 4688 records where PID 684 (hex `0x2ac`) was associated with `C:\Windows\System32\sppsvc.exe`, parented by `C:\Windows\System32\services.exe`. However, a client-PID join restricted to the two minutes before task updates returned no matches. The process-identifier-only results cannot establish a direct causal relationship because Windows reuses PIDs.
 
 **Assessment:** The task metadata is consistent with Software Protection Platform functionality. Direct attribution of the task updates to `sppsvc.exe` was not established.
 
@@ -90,13 +90,13 @@ Process investigation found Event ID 4688 records where PID 684 (hex `0x2ac`) wa
 Observed task definition:
 
 - Task path: `\Microsoft\Windows\Flighting\OneSettings\RefreshCache`.
-- Subject SID / task principal: `S-1-5-18` (LocalSystem).
-- Client PID: 2356; parent PID: 1072 in inspected records.
+- Task principal: LocalSystem.
+- Client and parent process identifiers were present in inspected records; numeric values are omitted.
 - Time trigger with a 283-minute repetition interval and a WNF state-change trigger.
-- Action: COM handler, class ID `{E07647F7-AED2-48D9-9720-939BC24A8A3C}`.
+- Action: COM handler; class identifier omitted.
 - Task is not hidden and requires network availability.
 
-A search for Event ID 4688 with PID 2356 in the available seven-day window returned no process-creation records.
+A search for the observed client process identifier in Event ID 4688 within the available seven-day window returned no process-creation records.
 
 **Assessment:** The configuration is consistent with a Windows background task, but the registering executable could not be identified from the available process-creation telemetry.
 
@@ -123,11 +123,11 @@ Observed task definition:
 - Configured task action: `%windir%\system32\devicecensus.exe SystemCxt`.
 - Daily time trigger with a two-hour random delay.
 - Task is not hidden.
-- Inspected records showed client PID 2464 and parent PID 1072.
+- Inspected records contained client and parent process identifiers; numeric values are omitted.
 
 The configured action is consistent with Windows Device Census functionality. The action executable is not necessarily the process that registered the task. The client PID was not reliably attributed: a PID-only search returned multiple process creations over seven days, and the stricter time-window query returned no results.
 
-A later aggregation showed 14 updates, seven distinct client PIDs, and parent PID 1072.
+A later aggregation showed 14 updates and multiple distinct client process identifiers associated with a recurring parent process identifier.
 
 **Assessment:** The task definition is consistent with a Windows device-information task. The registering process remains unconfirmed.
 
@@ -141,9 +141,9 @@ Observed task definition:
 - Configured action: `C:\Windows\system32\sc.exe start wuauserv`.
 - Task description says it starts the Windows Update service for scheduled operations such as scans.
 - Task is not hidden.
-- Inspected records showed client PID 1072 and parent PID 684.
+- Inspected records contained client and parent process identifiers; numeric values are omitted.
 
-PID 1072 appeared in Event ID 4688 records as several different executables, including `sc.exe`, `UsoClient.exe`, `DeviceCensus.exe`, `MpCmdRun.exe`, `wermgr.exe` and `wsqmcons.exe`. This demonstrates why PID-only correlation across a seven-day window is unsafe. The two-minute time-window join returned no matches for the Scheduled Start updates.
+A reused process identifier appeared in Event ID 4688 records with several different executables, including `sc.exe`, `UsoClient.exe`, `DeviceCensus.exe`, `MpCmdRun.exe`, `wermgr.exe` and `wsqmcons.exe`. This demonstrates why process-identifier-only correlation across a seven-day window is unsafe. The two-minute time-window join returned no matches for the Scheduled Start updates.
 
 **Assessment:** The task configuration is consistent with Windows Update service-start functionality. The registering executable was not established.
 
@@ -156,7 +156,7 @@ Observed task definition:
 - Configured action: `%systemroot%\system32\usoclient.exe StartScan`.
 - Time trigger repeats every 420 minutes with a 105-minute random delay.
 - Task is not hidden.
-- Two inspected records had different client PIDs (3800 and 4820) and different parent PIDs (684 and 816).
+- Two inspected records had different client and parent process identifiers; numeric values are omitted.
 
 **Assessment:** The configuration is consistent with scheduled Windows Update scanning. The configured action is not evidence of which process registered the task; registering-process attribution was not completed.
 
@@ -167,12 +167,12 @@ Observed task definition:
 - Task path: `\Microsoft\Windows\Data Integrity Scan\Data Integrity Check And Scan`.
 - Source and author fields reference `discan.dll`.
 - Subject SID / task principal: `S-1-5-18` (LocalSystem).
-- Action: COM handler, class ID `{DCFD3EA8-D960-4719-8206-490AE315F94F}`.
+- Action: COM handler; class identifier omitted.
 - Daily calendar trigger; a boot trigger was disabled in one inspected version and enabled in another.
 - Task is not hidden.
-- Inspected records showed client PID 2356 and parent PID 1072.
+- Inspected records contained client and parent process identifiers; numeric values are omitted.
 
-A seven-day aggregation showed 14 updates, all with client PID 2356 and parent PID 1072. The same client PID was observed in RefreshCache records, but this does not establish the executable identity or prove a shared registering process.
+A seven-day aggregation showed 14 updates with recurring client and parent process identifiers. Similar identifiers appeared in another task group, but this does not establish executable identity or prove a shared registering process.
 
 **Assessment:** The task metadata is consistent with a Windows data-integrity task. The registering executable was not identified.
 
@@ -229,7 +229,7 @@ The high event volume for `SvcRestartTask` (502) and `RefreshCache` (327) warran
 - Event ID 4702 indicates a task update; it does not by itself show that the task executed.
 - The rolling seven-day aggregate counts changed between executions. The task inventory counts and separate aggregate totals are preserved as observed, not forced into an artificial reconciliation.
 - Only selected records from each task group were inspected; not all 953/966 aggregate events were individually reviewed.
-- PID reuse limits attribution. Some client PIDs had no corresponding Event ID 4688 record in the available time window.
+- Process-identifier reuse limits attribution. Some client PIDs had no corresponding Event ID 4688 record in the available time window.
 - The configured task action is not necessarily the executable that registered the task.
 - Executable signatures and hashes were not verified for all observed binaries.
 - Temporary `DismHost.exe` files were no longer present when checked, preventing retrospective signature/hash verification.
