@@ -105,7 +105,7 @@ The test generated Windows Security Event ID 4799 records.
 
 | Property | Value |
 |---|---|
-| Incident ID | 136695 |
+| Incident ID | Omitted from public record |
 | Case reference | 29 |
 | Severity | Medium |
 | Classification | Informational, expected activity |
