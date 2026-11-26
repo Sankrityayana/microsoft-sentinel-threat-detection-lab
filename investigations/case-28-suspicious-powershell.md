@@ -5,14 +5,14 @@
 | Property | Value |
 |---|---|
 | Case reference | 28 |
-| Sentinel incident ID | 136694 |
+| Sentinel incident ID | Omitted from public record |
 | Detection | DET-02 — Suspicious PowerShell Activity |
 | Severity | Medium |
 | Affected computer | Windows Server lab VM |
 | Windows Event ID | 4104 |
 | Incident workflow status | Closed |
 
-**Status note:** The Microsoft Defender Cases list was rechecked on 2026-11-26 and showed CASE-28 (incident 136694) as Closed. The alert details showed Classification = Informational, expected activity, and Determination = Security testing. These are alert-level analyst fields; the Cases list displayed the case-level Classification and Determination as Unknown. Do not conflate the alert-level values with the separate case-level summary fields.
+**Status note:** The Microsoft Defender Cases list was rechecked on 2026-11-26 and showed CASE-28 as Closed. The alert details showed Classification = Informational, expected activity, and Determination = Security testing. These are alert-level analyst fields; the Cases list displayed the case-level Classification and Determination as Unknown. Do not conflate the alert-level values with the separate case-level summary fields.
 
 ## 2. Detection Context
 
@@ -104,7 +104,7 @@ Add redacted screenshots of:
 3. Controlled PowerShell test output.
 4. Alert classification and determination fields.
 5. Microsoft Defender closing-notes dialog or saved closing note, if available.
-6. Microsoft Defender Cases list showing CASE-28 / incident 136694 as Closed.
+6. Microsoft Defender Cases list showing CASE-28 as Closed.
 
 ---
 
