@@ -6,7 +6,7 @@
 | Property | Value |
 |---|---|
 | Case reference | 14 |
-| Sentinel incident ID | 136680 |
+| Sentinel incident ID | Omitted from public record |
 | Detection | DET-01 — Multiple Failed Logons |
 | Severity | Medium |
 | Affected computer | `windows-lab-vm` |
