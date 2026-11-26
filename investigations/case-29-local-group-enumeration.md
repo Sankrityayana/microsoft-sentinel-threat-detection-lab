@@ -8,7 +8,7 @@
 | Case reference | 29 |
 | Sentinel incident ID | Omitted from public record |
 | Detection | DET-03 — Suspicious Local Group Enumeration |
-| Alert ID | `sn109d0d21-63f7-44fe-8685-0ce52f32ad01` |
+| Alert ID | Omitted from public record |
 | Severity | Medium |
 | Affected computer | `windows-lab-vm` |
 | Windows Event ID | 4799 |
