@@ -67,6 +67,6 @@ Additional supporting evidence: `case-28-powershell-scriptblock.png` captures fo
 
 **Current status: 5 screenshots committed.** The repository contains `analytics-rules-overview.png`, `case-14-attack-graph.png`, `case-14-activities.png`, `case-28-powershell-scriptblock.png`, and `case-28-alert-list.png`.
 
-The CASE-28 alert-list screenshot supports the case overview and alert-list state (Closed, Medium severity, Resolved alert, Execution category). The PowerShell ScriptBlock marker screenshot supports the controlled Event ID 4104 test. Together they provide supporting evidence for the case, but do not independently prove every alert-to-event correlation step or replace the remaining incident-detail, alert-classification and closure-note captures.
+The CASE-28 alert-list screenshot supports the case overview and alert-list state (Closed, Medium severity, Resolved alert, Execution category). The separate EV-19 incident-detail screenshot is still pending. The PowerShell ScriptBlock marker screenshot supports the controlled Event ID 4104 test. Together they provide supporting evidence for the case, but do not independently prove every alert-to-event correlation step or replace the remaining incident-detail, alert-classification and closure-note captures.
 
 CASE-14's original Event ID 4625 telemetry was not retrievable for 25–28 October 2026. Update each checklist item only after the corresponding evidence has been committed and reviewed.
