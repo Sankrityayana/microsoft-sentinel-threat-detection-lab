@@ -82,7 +82,7 @@ Before publishing screenshots:
 
 ## 6. Current Evidence Status
 
-Azure infrastructure details are documented in [Azure Infrastructure Reference](../docs/azure-infrastructure/README.md), so infrastructure screenshots are not required. The screenshot index now contains 21 remaining planned captures across data collection, KQL, detection configuration and incident investigations. No screenshot files have yet been committed. Do not describe the screenshot evidence collection as complete until actual redacted screenshots have been committed.
+Azure infrastructure details are documented in [Azure Infrastructure Reference](../docs/azure-infrastructure/README.md), so infrastructure screenshots are not required. Five screenshots are currently committed: the analytics-rules overview, two CASE-14 screenshots, and two CASE-28 screenshots. Additional planned captures across data collection, KQL, detection configuration and incident investigations remain pending. Do not describe the screenshot evidence collection as complete until each planned item has been captured, committed and reviewed.
 
 ## 7. Evidence Integrity
 
