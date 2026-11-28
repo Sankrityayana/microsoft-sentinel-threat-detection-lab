@@ -53,7 +53,7 @@ Classification, determination and workflow status are separate incident attribut
 
 ## 5. Screenshot Evidence
 
-The screenshot inventory currently contains 21 planned evidence items. No actual screenshot files were present in the repository at the time of the latest repository review.
+The screenshot inventory contains 21 planned evidence items. Five screenshots are now committed: analytics-rules overview, two CASE-14 screenshots, and two CASE-28 screenshots. The remaining planned captures are pending.
 
 | Evidence group | Planned items | Status |
 |---|---:|---|
@@ -61,7 +61,7 @@ The screenshot inventory currently contains 21 planned evidence items. No actual
 | KQL query results | 8 | Pending capture and security review |
 | Detection configuration | 3 | Pending capture and security review |
 | Incident investigations | 4 | Pending capture and security review |
-| **Total** | **21** | **0 captured in repository** |
+| **Total** | **21** | **5 committed; remaining captures pending** |
 
 See [Screenshot Evidence Collection](../evidence/screenshots/README.md) for filenames and capture requirements.
 
@@ -69,11 +69,11 @@ See [Screenshot Evidence Collection](../evidence/screenshots/README.md) for file
 
 Non-screenshot implementation and documentation work recorded in this repository is substantially complete. The following items remain outside repository-only work:
 
-- Capture and review the 21 planned screenshots, with sensitive information redacted.
+- Capture and review the remaining planned screenshots, with sensitive information redacted.
 - Perform a dedicated GitHub secret-scanning/history review; the earlier targeted search was not comprehensive.
 
 KQL-08's selected task-level investigation is documented. Its remaining process-attribution and binary-integrity limitations are explicit; this is not represented as a complete forensic review.
 
 ---
 
-**Status:** Implementation, controlled testing, CASE-28 closure, live AMA/DCR/analytics-rule checks and fresh ingestion validation were confirmed on 2026-11-26. Screenshot evidence remains pending; repository secret/history assurance remains limited.
+**Status:** Implementation, controlled testing, CASE-28 closure, live AMA/DCR/analytics-rule checks and fresh ingestion validation were confirmed on 2026-11-26. Five screenshots are committed; the remaining screenshot evidence is pending. Repository secret/history assurance remains limited.
