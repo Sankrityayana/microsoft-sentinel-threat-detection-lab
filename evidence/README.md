@@ -52,8 +52,6 @@ Screenshots will be organized under:
 
 `screenshots/`
 
-Five screenshots are currently committed: the analytics-rules overview, two CASE-14 screenshots, and two CASE-28 screenshots. See the [screenshot evidence checklist](screenshots/README.md) for current capture status.
-
 Use descriptive filenames that identify the component or activity.
 
 Examples:
