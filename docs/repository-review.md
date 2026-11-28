@@ -6,7 +6,7 @@
 
 The repository contains the project overview, architecture, environment, deployment, ingestion, detection engineering, investigation methodology, limitations, validation matrix, eight KQL query documents, three detection documents and three case reports.
 
-The recorded implementation and controlled tests are documented. KQL-08 now includes a selected event-level review of nine scheduled-task groups. Screenshot evidence remains intentionally excluded from this review and is still pending.
+The recorded implementation and controlled tests are documented. KQL-08 now includes a selected event-level review of nine scheduled-task groups. Five screenshots are committed: the analytics-rules overview, two CASE-14 screenshots, and two CASE-28 screenshots (PowerShell ScriptBlock test and alert list). Further planned screenshots remain pending.
 
 ## Work Completed During This Review
 
@@ -35,11 +35,11 @@ Before public release, enable GitHub secret scanning/push protection if availabl
 ## Outstanding Work (Excluding Screenshots)
 
 1. **Security history assurance:** The targeted current-content search is not a full secret scan and did not inspect Git history. Use GitHub secret scanning/push protection where available and rotate any real credential that may have been committed.
-2. **Evidence capture:** The 25 planned screenshots remain pending and should be captured with sensitive values redacted.
+2. **Evidence capture:** The screenshot index records five committed screenshots and additional planned captures still pending; capture remaining items with sensitive values redacted.
 
 ## Evidence Excluded by Request
 
-The repository's screenshot inventory remains pending. No screenshot was created, fabricated or uploaded during this review.
+The screenshot inventory was reviewed after the CASE-28 alert-list and PowerShell ScriptBlock images were committed. No new screenshot was fabricated or uploaded as part of this repository audit.
 
 ## Overall Assessment
 
@@ -55,6 +55,6 @@ The repository's screenshot inventory remains pending. No screenshot was created
 
 **Live Azure verification:** Performed on 2026-11-26: AMA health/version, DCR source/XPath/destination, VM association count, all three enabled analytics rules and fresh SecurityEvent ingestion were checked in the portal.
 
-**Screenshot evidence:** Pending and intentionally not performed.
+**Screenshot evidence:** Five screenshots are committed; remaining planned captures are pending.
 
 The project can be presented as a documented, controlled single-host Sentinel lab with live configuration and ingestion checks performed on 2026-11-26. It should not be described as production-ready, fully screenshot-evidenced, or subject to a complete forensic/secret audit.
