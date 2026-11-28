@@ -49,7 +49,7 @@ Additional supporting evidence: `case-28-powershell-scriptblock.png` captures fo
 | ID | Screenshot filename | What it should demonstrate | Status |
 |---|---|---|---|
 | EV-18 | `case-14-attack-graph.png`, `case-14-activities.png` | CASE-14 attack graph and activity history | Partial — 2 screenshots uploaded; alert/event evidence pending |
-| EV-19 | `case-28-investigation.png` | CASE-28 case overview and alert-list status (Closed); a separate incident-detail capture is still pending | Pending capture |
+| EV-19 | `case-28-investigation.png` | CASE-28 incident-detail investigation view; the case overview/alert-list is already committed separately | Pending capture |
 | EV-20 | `case-29-investigation.png` | CASE-29 incident showing Closed status | Pending capture |
 | EV-21 | `incident-classification-resolution.png` | Classification and incident workflow evidence | Pending capture |
 
