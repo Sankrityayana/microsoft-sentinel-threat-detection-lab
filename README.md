@@ -212,7 +212,7 @@ This is a learning and demonstration environment, not a production enterprise SO
 
 ## Evidence and Screenshots
 
-**Evidence status:** The evidence inventory lists 21 remaining planned screenshots; none have been committed to the repository. Actual screenshots must be captured from the Azure and Sentinel environment before the evidence section can be considered complete. Actual screenshots must be captured from the Azure and Sentinel environment before the evidence section can be considered complete.
+**Evidence status:** Five screenshots are currently committed: the analytics-rules overview, two CASE-14 screenshots, and two CASE-28 screenshots (PowerShell ScriptBlock test and alert list). Additional planned captures remain pending. See the [screenshot evidence index](evidence/screenshots/README.md) for the current item-by-item status.
 
 [View the evidence index](evidence/README.md).
 
