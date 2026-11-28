@@ -4,7 +4,7 @@
 
 This directory stores original screenshots demonstrating the actual implementation and validation of the Microsoft Sentinel lab.
 
-No screenshot files are currently committed. All listed evidence items are **Pending capture**.
+The directory contains committed evidence screenshots. Each checklist item below is tracked separately; an uploaded supporting screenshot does not automatically complete an entire investigation.
 
 ## Azure Infrastructure — documented, no screenshot required
 
@@ -20,6 +20,8 @@ Azure infrastructure configuration is documented in [Azure Infrastructure Refere
 | EV-04 | `dcr-vm-association.png` | DCR association with VM | Pending capture |
 | EV-05 | `security-event-ingestion.png` | Windows Security events in Log Analytics | Pending capture |
 | EV-06 | `powershell-event-4104.png` | PowerShell Script Block Logging ingestion | Pending capture |
+
+Additional supporting evidence: `case-28-powershell-scriptblock.png` captures four Event ID 4104 records containing the controlled marker `SOC_LAB_POWERSHELL_DETECTION_TEST_2026` on `win-soc-lab-01` (24 Nov 2026). This demonstrates controlled script-block test activity; it does not independently prove alert correlation.
 
 ## 2. KQL Threat Hunting
 
@@ -63,6 +65,6 @@ Azure infrastructure configuration is documented in [Azure Infrastructure Refere
 
 ## 6. Evidence Status
 
-**Current status: 2 screenshots uploaded; CASE-14 evidence is partially complete.**
+**Current status: 4 screenshots committed** — analytics-rules overview, two CASE-14 screenshots, and one CASE-28 PowerShell script-block marker screenshot.
 
-This is an evidence collection plan. Two CASE-14 screenshots (attack graph and activities) are committed. The CASE-14 incident overview, alert details and underlying Event ID 4625 query results remain to be captured and reviewed. Update each item only after the corresponding evidence has been committed.
+Four screenshots are committed: `analytics-rules-overview.png`, `case-14-attack-graph.png`, `case-14-activities.png`, and `case-28-powershell-scriptblock.png`. CASE-14's original Event ID 4625 telemetry was not retrievable for 25–28 October 2026. CASE-28's marker screenshot supports controlled PowerShell Script Block Logging activity, but the alert-to-event correlation and the full CASE-28 investigation capture remain pending. Update each checklist item only after the corresponding evidence has been committed and reviewed.
