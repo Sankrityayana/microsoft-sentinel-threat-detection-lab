@@ -53,7 +53,7 @@ Classification, determination and workflow status are separate incident attribut
 
 ## 5. Screenshot Evidence
 
-The screenshot inventory contains 21 planned evidence items. Five screenshots are now committed: analytics-rules overview, two CASE-14 screenshots, and two CASE-28 screenshots. The remaining planned captures are pending.
+The screenshot inventory contains 21 planned evidence items. Five screenshots are committed: the analytics-rules overview, two CASE-14 screenshots, and two CASE-28 screenshots (the PowerShell ScriptBlock marker and case alert list). Sixteen planned captures remain pending.
 
 | Evidence group | Planned items | Status |
 |---|---:|---|
