@@ -4,7 +4,7 @@
 
 This directory stores original screenshots demonstrating the actual implementation and validation of the Microsoft Sentinel lab.
 
-No screenshot files were present when this inventory was reviewed. All listed evidence items are therefore marked **Pending capture**.
+One reviewed screenshot has been committed: `analytics-rules-overview.png` (workspace analytics-rules overview; three active, enabled custom rules). The 21 evidence items listed below remain **Pending capture** unless otherwise stated.
 
 ## Azure Infrastructure — documented, no screenshot required
 
@@ -36,6 +36,8 @@ Azure infrastructure configuration is documented in [Azure Infrastructure Refere
 
 ## 3. Detection Engineering
 
+**Additional overview evidence:** [`analytics-rules-overview.png`](analytics-rules-overview.png) — demonstrates three active, enabled custom analytics rules and their severity/tactic/technique summary.
+
 | ID | Screenshot filename | What it should demonstrate | Status |
 |---|---|---|---|
 | EV-15 | `detection-multiple-failed-logons.png` | DET-01 configuration | Pending capture |
@@ -63,6 +65,6 @@ Azure infrastructure configuration is documented in [Azure Infrastructure Refere
 
 ## 6. Evidence Status
 
-**Current status: 0 of 21 screenshots captured in this repository.**
+**Current status: 1 additional overview screenshot committed; 0 of the 21 individually planned evidence captures completed.**
 
 This is an evidence collection plan, not a claim that the screenshots already exist. Capture each item from the actual environment and update its status only after the corresponding image has been committed.
