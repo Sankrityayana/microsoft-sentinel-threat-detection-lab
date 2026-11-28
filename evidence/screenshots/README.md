@@ -46,7 +46,7 @@ Azure infrastructure configuration is documented in [Azure Infrastructure Refere
 
 | ID | Screenshot filename | What it should demonstrate | Status |
 |---|---|---|---|
-| EV-18 | `case-14-investigation.png` | CASE-14 incident and evidence | Pending capture |
+| EV-18 | `case-14-attack-graph.png`, `case-14-activities.png` | CASE-14 attack graph and activity history | Partial — 2 screenshots uploaded; alert/event evidence pending |
 | EV-19 | `case-28-investigation.png` | CASE-28 incident showing New status | Pending capture |
 | EV-20 | `case-29-investigation.png` | CASE-29 incident showing Closed status | Pending capture |
 | EV-21 | `incident-classification-resolution.png` | Classification and incident workflow evidence | Pending capture |
@@ -63,6 +63,6 @@ Azure infrastructure configuration is documented in [Azure Infrastructure Refere
 
 ## 6. Evidence Status
 
-**Current status: 0 of 21 screenshots captured in this repository.**
+**Current status: 2 screenshots uploaded; CASE-14 evidence is partially complete.**
 
-This is an evidence collection plan, not a claim that the screenshots already exist. Capture each item from the actual environment and update its status only after the corresponding image has been committed.
+This is an evidence collection plan. Two CASE-14 screenshots (attack graph and activities) are committed. The CASE-14 incident overview, alert details and underlying Event ID 4625 query results remain to be captured and reviewed. Update each item only after the corresponding evidence has been committed.
