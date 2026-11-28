@@ -49,7 +49,7 @@ Additional supporting evidence: `case-28-powershell-scriptblock.png` captures fo
 | ID | Screenshot filename | What it should demonstrate | Status |
 |---|---|---|---|
 | EV-18 | `case-14-attack-graph.png`, `case-14-activities.png` | CASE-14 attack graph and activity history | Partial — 2 screenshots uploaded; alert/event evidence pending |
-| EV-19 | `case-28-investigation.png` | CASE-28 incident showing New status | Pending capture |
+| EV-19 | `case-28-investigation.png` | CASE-28 case overview and alert-list status (Closed); a separate incident-detail capture is still pending | Pending capture |
 | EV-20 | `case-29-investigation.png` | CASE-29 incident showing Closed status | Pending capture |
 | EV-21 | `incident-classification-resolution.png` | Classification and incident workflow evidence | Pending capture |
 
@@ -65,6 +65,8 @@ Additional supporting evidence: `case-28-powershell-scriptblock.png` captures fo
 
 ## 6. Evidence Status
 
-**Current status: 4 screenshots committed** — analytics-rules overview, two CASE-14 screenshots, and one CASE-28 PowerShell script-block marker screenshot.
+**Current status: 5 screenshots committed.** The repository contains `analytics-rules-overview.png`, `case-14-attack-graph.png`, `case-14-activities.png`, `case-28-powershell-scriptblock.png`, and `case-28-alert-list.png`.
 
-Four screenshots are committed: `analytics-rules-overview.png`, `case-14-attack-graph.png`, `case-14-activities.png`, and `case-28-powershell-scriptblock.png`. CASE-14's original Event ID 4625 telemetry was not retrievable for 25–28 October 2026. CASE-28's marker screenshot supports controlled PowerShell Script Block Logging activity, but the alert-to-event correlation and the full CASE-28 investigation capture remain pending. Update each checklist item only after the corresponding evidence has been committed and reviewed.
+The CASE-28 alert-list screenshot supports the case overview and alert-list state (Closed, Medium severity, Resolved alert, Execution category). The PowerShell ScriptBlock marker screenshot supports the controlled Event ID 4104 test. Together they provide supporting evidence for the case, but do not independently prove every alert-to-event correlation step or replace the remaining incident-detail, alert-classification and closure-note captures.
+
+CASE-14's original Event ID 4625 telemetry was not retrievable for 25–28 October 2026. Update each checklist item only after the corresponding evidence has been committed and reviewed.
